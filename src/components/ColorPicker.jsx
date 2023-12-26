@@ -11,43 +11,47 @@ export default function ColorPicker() {
     marginBottom: "1rem",
   };
 
-  const setRedColor = () => {
-    setColor("red");
+  const redStyle = {
+    width: "30px",
+    height: "30px",
+    background: "red",
+    cursor: "pointer",
   };
 
-  const setGreenColor = () => setColor("green");
+  const greenStyle = {
+    width: "30px",
+    height: "30px",
+    background: "green",
+    cursor: "pointer",
+  };
+
+  const blueStyle = {
+    width: "30px",
+    height: "30px",
+    background: "blue",
+    cursor: "pointer",
+  };
 
   return (
     <div>
       <div style={topContainer}>
         <div
-          onClick={setRedColor}
-          style={{
-            width: "30px",
-            height: "30px",
-            background: "red",
-            cursor: "pointer",
+          onClick={() => {
+            setColor("red");
           }}
+          style={redStyle}
         ></div>
         <div
-          onClick={setGreenColor}
-          style={{
-            width: "30px",
-            height: "30px",
-            background: "green",
-            cursor: "pointer",
+          onClick={() => {
+            setColor("green");
           }}
+          style={greenStyle}
         ></div>
         <div
           onClick={() => {
             setColor("blue");
           }}
-          style={{
-            width: "30px",
-            height: "30px",
-            background: "blue",
-            cursor: "pointer",
-          }}
+          style={blueStyle}
         ></div>
       </div>
       <div style={{ width: "200px", height: "50px", background: color }}></div>
