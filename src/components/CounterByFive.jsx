@@ -1,12 +1,12 @@
 import { useState } from "react";
 
-function Counter() {
+function CounterByFive() {
   const [counter, setCounter] = useState(0);
   function add() {
-    setCounter((old) => old + 1);
+    setCounter((old) => old + 5);
   }
   function sub() {
-    setCounter((old) => old - 1);
+    setCounter((old) => old - 5);
   }
 
   return (
@@ -18,4 +18,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default CounterByFive;

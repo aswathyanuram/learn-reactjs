@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Box from "./components/Box";
-import Circle from "./components/Circle";
-import Traffic from "./components/Traffic";
 import Counter from "./components/Counter";
-import ColorPicker from "./components/ColorPicker";
+import CounterByX from "./components/CounterbyX";
 
 function App() {
   return (
     <>
-      <ColorPicker />
+      <CounterByX x={1} />
+      <CounterByX x={5} />
+      <CounterByX x={100} />
     </>
   );
 }
